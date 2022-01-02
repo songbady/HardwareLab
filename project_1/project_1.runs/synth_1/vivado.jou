@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Sun Jan  2 10:05:12 2022
-# Process ID: 34112
-# Current directory: C:/Users/31930/Desktop/lab4/project_1/project_1.runs/synth_1
+# Start of session at: Sun Jan  2 08:55:48 2022
+# Process ID: 30632
+# Current directory: C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/synth_1
 # Command line: vivado.exe -log top.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source top.tcl
-# Log file: C:/Users/31930/Desktop/lab4/project_1/project_1.runs/synth_1/top.vds
-# Journal file: C:/Users/31930/Desktop/lab4/project_1/project_1.runs/synth_1\vivado.jou
+# Log file: C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/synth_1/top.vds
+# Journal file: C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/synth_1\vivado.jou
 # Running On: DESKTOP-UOKA3RC, OS: Windows, CPU Frequency: 2296 MHz, CPU Physical cores: 8, Host memory: 6314 MB
 #-----------------------------------------------------------
 source top.tcl -notrace

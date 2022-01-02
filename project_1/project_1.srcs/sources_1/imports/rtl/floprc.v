@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2017/11/22 09:53:32
+// Create Date: 2019/12/06 20:00:46
 // Design Name: 
 // Module Name: floprc
 // Project Name: 
@@ -21,18 +21,15 @@
 
 
 module floprc #(parameter WIDTH = 8)(
-	input wire clk,rst,clear,
-	input wire[WIDTH-1:0] d,
-	output reg[WIDTH-1:0] q
+input wire clk,rst,clr,
+input wire[WIDTH-1:0] d,
+output reg[WIDTH-1:0] q
     );
+always @(posedge clk)
+    if(rst || clr)
+        q <= 0;
+    else
+        q <= d;
 
-	always @(posedge clk,posedge rst) begin
-		if(rst) begin
-			q <= 0;
-		end else if (clear)begin
-			q <= 0;
-		end else begin 
-			q <= d;
-		end
-	end
+
 endmodule

@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2017/11/02 14:44:10
+// Create Date: 2019/11/22 20:16:59
 // Design Name: 
-// Module Name: mux2
+// Module Name: mux
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,14 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module mux2 #(parameter WIDTH = 8)(
-	input wire[WIDTH-1:0] d0,d1,
-	input wire s,
-	output wire[WIDTH-1:0] y
-    );
-	
-	assign y = s ? d1 : d0;
+module mux2
+#(parameter N=32)
+(
+    input [N-1:0] ina, inb,
+    input s,
+    output [N-1:0] out
+);
+assign out = (s == 1'b0)?ina :
+             (s == 1'b1)?inb :
+             32'h00000000;
 endmodule

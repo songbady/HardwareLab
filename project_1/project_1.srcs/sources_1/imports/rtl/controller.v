@@ -23,59 +23,85 @@
 module controller(
 	input wire clk,rst,
 	//decode stage
-	input wire[5:0] opD,functD,
-	output wire pcsrcD,branchD,equalD,jumpD,
-	
+	input wire[31:0] instrD,
+	output wire pcsrcD,branchD,
+	input equalD,stallD,
+	output jumpD,balD,jrD,jalD,
+	output eretD,syscallD,breakD,
+	output invalidD,
 	//execute stage
-	input wire flushE,
+	input wire flushE,stallE,
 	output wire memtoregE,alusrcE,
-	output wire regdstE,regwriteE,	
+	output wire regdstE,regwriteE,
+	output wire hilo_writeE, hilo_dstE,
+	output wire hilo_readE,
+	output wire div_validE,signed_divE,
+	output wire jalE,jrE,balE,
 	output wire[7:0] alucontrolE,
-
+	output wire cp0readE,
 	//mem stage
-	output wire memtoregM,memwriteM,
-				regwriteM,
+	input wire flushM,stallM,
+	output wire memtoregM,
+	output wire	regwriteM,hilo_writeM,
+	output wire hilo_dstM,memenM,cp0weM,
+	output wire [7:0]alucontrolM,
+	output wire memwriteM,
 	//write back stage
-	output wire memtoregW,regwriteW
-
+	input wire flushW,stallW,
+	output wire memtoregW,regwriteW,
+	output wire hilo_writeW,hilo_dstW,
+	output wire cp0weW
     );
 	
 	//decode stage
-	//wire[1:0] aluopD;
-	wire memtoregD,memwriteD,alusrcD,
-		regdstD,regwriteD;
+	wire memtoregD,alusrcD,
+		regdstD,regwriteD, hilo_writeD,
+		hilo_dstD,cp0weD,cp0readD;
 	wire[7:0] alucontrolD;
-
+	wire memenD;
+	wire hilo_readD,memwriteD;
 	//execute stage
-	wire memwriteE;
+	wire memenE,cp0weE,memwriteE;
 
-	maindec md(
-		opD,
-		memtoregD,memwriteD,
-		branchD,alusrcD,
-		regdstD,regwriteD,
-		jumpD
+	main_decoder md(
+		.instr(instrD),.stallD(stallD),
+		.regwrite(regwriteD),.regdst(regdstD),
+		.alusrc(alusrcD),.branch(branchD),
+		.memtoreg(memtoregD),
+		.jump(jumpD),.memen(memenD),.jal(jalD),
+		.jr(jrD),.bal(balD),.hilo_write(hilo_writeD),
+		.hilo_dst(hilo_dstD),.hilo_read(hilo_readD),
+		.div_valid(div_validD),.signed_div(signed_divD),
+		.cp0we(cp0weD),.cp0read(cp0readD),.eret(eretD),
+		.syscall(syscallD),.break(breakD),.memwrite(memwriteD)
 		);
-	aludec ad(functD,opD,alucontrolD);
+	aludec ad(instrD,stallD,alucontrolD,invalidD);
 
 	assign pcsrcD = branchD & equalD;
 
 	//pipeline registers
-	floprc #(12) regE(
+	flopenrc #(25) regE(
 		clk,
 		rst,
+		~stallE,
 		flushE,
-		{memtoregD,memwriteD,alusrcD,regdstD,regwriteD,alucontrolD},
-		{memtoregE,memwriteE,alusrcE,regdstE,regwriteE,alucontrolE}
+		{memtoregD,alusrcD,regdstD,regwriteD,hilo_writeD,
+		hilo_dstD,hilo_readD,div_validD,signed_divD,jrD,jalD,balD,memenD,cp0weD,cp0readD,memwriteD,alucontrolD},
+		{memtoregE,alusrcE,regdstE,regwriteE,hilo_writeE,
+		hilo_dstE,hilo_readE,div_validE,signed_divE,jrE,jalE,balE,memenE,cp0weE,cp0readE,memwriteE,alucontrolE}
 		);
-	flopr #(8) regM(
+	flopenrc #(17) regM(
 		clk,rst,
-		{memtoregE,memwriteE,regwriteE},
-		{memtoregM,memwriteM,regwriteM}
+		~stallM,
+		flushM,
+		{memtoregE,regwriteE,hilo_writeE,hilo_dstE,cp0weE,memenE,memwriteE,alucontrolE},
+		{memtoregM,regwriteM,hilo_writeM,hilo_dstM,cp0weM,memenM,memwriteM,alucontrolM}
 		);
-	flopr #(8) regW(
+	flopenrc #(8) regW(
 		clk,rst,
-		{memtoregM,regwriteM},
-		{memtoregW,regwriteW}
+		~stallW,
+		flushW,
+		{memtoregM,regwriteM,hilo_writeM,hilo_dstM,cp0weM},
+		{memtoregW,regwriteW,hilo_writeW,hilo_dstW,cp0weW}
 		);
 endmodule

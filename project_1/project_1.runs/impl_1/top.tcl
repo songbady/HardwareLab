@@ -17,7 +17,7 @@ proc create_report { reportName command } {
   }
 }
 namespace eval ::optrace {
-  variable script "C:/Users/31930/Desktop/lab4/project_1/project_1.runs/impl_1/top.tcl"
+  variable script "C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/impl_1/top.tcl"
   variable category "vivado_impl"
 }
 
@@ -123,23 +123,22 @@ set ACTIVE_STEP init_design
 set rc [catch {
   create_msg_db init_design.pb
   set_param chipscope.maxJobs 2
-  set_param synth.elaboration.rodinMoreOptions {rt::set_parameter enableTristateBubbleUp 1}
 OPTRACE "create in-memory project" START { }
   create_project -in_memory -part xc7a100tcsg324-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
 OPTRACE "create in-memory project" END { }
 OPTRACE "set parameters" START { }
-  set_property webtalk.parent_dir C:/Users/31930/Desktop/lab4/project_1/project_1.cache/wt [current_project]
-  set_property parent.project_path C:/Users/31930/Desktop/lab4/project_1/project_1.xpr [current_project]
-  set_property ip_output_repo C:/Users/31930/Desktop/lab4/project_1/project_1.cache/ip [current_project]
+  set_property webtalk.parent_dir {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.cache/wt} [current_project]
+  set_property parent.project_path {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.xpr} [current_project]
+  set_property ip_output_repo {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.cache/ip}} [current_project]
   set_property ip_cache_permissions {read write} [current_project]
   set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 OPTRACE "set parameters" END { }
 OPTRACE "add files" START { }
-  add_files -quiet C:/Users/31930/Desktop/lab4/project_1/project_1.runs/synth_1/top.dcp
-  read_ip -quiet C:/Users/31930/Desktop/lab4/rtl/xilinx_ip/data_ram/data_ram.xci
-  read_ip -quiet C:/Users/31930/Desktop/lab4/rtl/xilinx_ip/inst_ram/inst_ram.xci
+  add_files -quiet {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/synth_1/top.dcp}}
+  read_ip -quiet {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/data_ram/data_ram.xci}}
+  read_ip -quiet {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/inst_ram/inst_ram.xci}}
 OPTRACE "read constraints: implementation" START { }
 OPTRACE "read constraints: implementation" END { }
 OPTRACE "add files" END { }

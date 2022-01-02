@@ -1,9 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
--- Date        : Sun Jan  2 10:10:19 2022
--- Host        : DESKTOP-UOKA3RC running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub c:/Users/31930/Desktop/lab4/rtl/xilinx_ip/inst_ram/inst_ram_stub.vhdl
+-- Date        : Thu Dec 30 14:46:14 2021
+-- Host        : DELL-G7-KNO3 running 64-bit major release  (build 9200)
+-- Command     : write_vhdl -force -mode synth_stub -rename_top inst_ram -prefix
+--               inst_ram_ inst_ram_stub.vhdl
 -- Design      : inst_ram
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7a100tcsg324-1

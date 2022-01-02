@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2017/11/26 21:25:26
+// Create Date: 2019/11/15 19:42:03
 // Design Name: 
 // Module Name: pc
 // Project Name: 
@@ -20,17 +20,21 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module pc #(parameter WIDTH = 8)(
-	input wire clk,rst,en,
-	input wire[WIDTH-1:0] d,
-	output reg[WIDTH-1:0] q
-    );
-	always @(posedge clk,posedge rst) begin
-		if(rst) begin
-			q <= 0;
-		end else if(en) begin
-			/* code */
-			q <= d;
-		end
-	end
+module pc(
+input clk, rst,
+input [31:0] newaddr,
+output reg [31:0] addr,
+output reg inst_ce
+);
+always @(posedge clk) 
+    if(rst)
+        addr <= 32'hfffffffc;
+    else
+        addr <= newaddr;
+
+always @(posedge clk)
+    if(rst)
+        inst_ce <= 0;
+    else
+        inst_ce <= 1;
 endmodule

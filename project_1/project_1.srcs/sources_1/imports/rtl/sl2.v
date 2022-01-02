@@ -3,7 +3,7 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2017/11/02 14:28:02
+// Create Date: 2019/11/25 10:15:51
 // Design Name: 
 // Module Name: sl2
 // Project Name: 
@@ -20,10 +20,8 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module sl2(
-	input wire[31:0] a,
-	output wire[31:0] y
-    );
-
-	assign y = {a[29:0],2'b00};
+module sl2 (input [31:0] a,
+            output [31:0] y);
+    // shift left by 2
+    assign y = {a[29:0], 2'b00};
 endmodule

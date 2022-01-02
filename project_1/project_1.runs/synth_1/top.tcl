@@ -4,7 +4,7 @@
 
 set TIME_start [clock seconds] 
 namespace eval ::optrace {
-  variable script "C:/Users/31930/Desktop/lab4/project_1/project_1.runs/synth_1/top.tcl"
+  variable script "C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.runs/synth_1/top.tcl"
   variable category "vivado_synth"
 }
 
@@ -70,8 +70,6 @@ proc create_report { reportName command } {
   }
 }
 OPTRACE "synth_1" START { ROLLUP_AUTO }
-set_param chipscope.maxJobs 2
-set_param synth.elaboration.rodinMoreOptions {rt::set_parameter enableTristateBubbleUp 1}
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7a100tcsg324-1
 
@@ -79,46 +77,47 @@ set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
-set_property webtalk.parent_dir C:/Users/31930/Desktop/lab4/project_1/project_1.cache/wt [current_project]
-set_property parent.project_path C:/Users/31930/Desktop/lab4/project_1/project_1.xpr [current_project]
+set_property webtalk.parent_dir {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.cache/wt} [current_project]
+set_property parent.project_path {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.xpr} [current_project]
 set_property XPM_LIBRARIES XPM_MEMORY [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/31930/Desktop/lab4/project_1/project_1.cache/ip [current_project]
+set_property ip_output_repo {c:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.cache/ip} [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 OPTRACE "Creating in-memory project" END { }
 OPTRACE "Adding files" START { }
-add_files C:/Users/31930/Desktop/lab4/funcTest_independent/ArithmeticTest/obj/inst_ram.coe
-read_verilog C:/Users/31930/Desktop/lab4/rtl/myCPU/utils/defines2.vh
+add_files {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/funcTest_independent/ArithmeticTest/obj/inst_ram.coe}}
+read_verilog {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/myCPU/utils/defines2.vh}}
+set_property file_type "Verilog Header" [get_files {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/myCPU/utils/defines2.vh}}]
 read_verilog -library xil_defaultlib {
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/adder.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/alu.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/aludec.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/controller.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/datapath.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/eqcmp.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopenr.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopenrc.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopr.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/floprc.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/hazard.v
-  C:/Users/31930/Desktop/lab4/rtl/myCPU/utils/instdec.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/maindec.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mips.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mux2.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mux3.v
-  C:/Users/31930/Desktop/lab4/rtl/myCPU/mycpu_top.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/pc.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/regfile.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/signext.v
-  C:/Users/31930/Desktop/lab4/project_1/project_1.srcs/sources_1/imports/rtl/sl2.v
-  C:/Users/31930/Desktop/lab4/rtl/top.v
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/adder.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/alu.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/aludec.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/controller.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/datapath.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/eqcmp.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopenr.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopenrc.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/flopr.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/floprc.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/hazard.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/myCPU/utils/instdec.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/maindec.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mips.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mux2.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/mux3.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/myCPU/mycpu_top.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/pc.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/regfile.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/signext.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/project_1/project_1.srcs/sources_1/imports/rtl/sl2.v}
+  {C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/top.v}
 }
-read_ip -quiet C:/Users/31930/Desktop/lab4/rtl/xilinx_ip/data_ram/data_ram.xci
-set_property used_in_implementation false [get_files -all c:/Users/31930/Desktop/lab4/rtl/xilinx_ip/data_ram/data_ram_ooc.xdc]
+read_ip -quiet {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/data_ram/data_ram.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/data_ram/data_ram_ooc.xdc}}]
 
-read_ip -quiet C:/Users/31930/Desktop/lab4/rtl/xilinx_ip/inst_ram/inst_ram.xci
-set_property used_in_implementation false [get_files -all c:/Users/31930/Desktop/lab4/rtl/xilinx_ip/inst_ram/inst_ram_ooc.xdc]
+read_ip -quiet {{C:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/inst_ram/inst_ram.xci}}
+set_property used_in_implementation false [get_files -all {{c:/Users/31930/Documents/Tencent Files/319308801/FileRecv/lab4/lab4/rtl/xilinx_ip/inst_ram/inst_ram_ooc.xdc}}]
 
 OPTRACE "Adding files" END { }
 # Mark all dcp files as not used in implementation to prevent them from being
