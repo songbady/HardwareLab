@@ -1,0 +1,187 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 19792
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Dec 31 11:36:33 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	song
+User home directory: C:/Users/31930
+User working directory: C:/Users/31930/Desktop/lab4/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/31930/Desktop/lab4/project_1/vivado.log
+Vivado journal file: 	C:/Users/31930/Desktop/lab4/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/31930/Desktop/lab4/project_1/.Xil/Vivado-19792-DESKTOP-UOKA3RC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,055 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// WARNING: HEventQueue.dispatchEvent() is taking  1357 ms.
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\31930\Desktop\lab4\project_1\project_1.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project C:/Users/31930/Desktop/lab4/project_1/project_1.xpr 
+// TclEventType: FLOW_ADDED
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 56 MB. Current time: 12/31/21, 11:36:35 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 107 MB (+109451kb) [00:00:51]
+// [Engine Memory]: 1,055 MB (+955169kb) [00:00:51]
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 1390 ms. Increasing delay to 3000 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  17370 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1495 ms.
+// Tcl Message: open_project C:/Users/31930/Desktop/lab4/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// WARNING: HSwingWorker (Update Runs Swing Worker) is taking 2046 ms. Increasing delay to 4000 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:56 ; elapsed = 00:00:38 . Memory (MB): peak = 1252.602 ; gain = 0.000 
+// Project name: project_1; location: C:/Users/31930/Desktop/lab4/project_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 118 MB (+5885kb) [00:04:57]
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.3s
+// Elapsed time: 632 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), inst_ram : inst_ram (inst_ram.xci)]", 4, false, false, false, false, false, true); // D - Double Click
+// [GUI Memory]: 126 MB (+2274kb) [00:22:28]
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 124 MB. Current time: 12/31/21, 12:06:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 60 MB. Current time: 12/31/21, 12:36:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 56 MB. Current time: 12/31/21, 1:06:35 PM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 56 MB. Current time: 12/31/21, 1:36:36 PM CST
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 1117 ms. Increasing delay to 3351 ms.
+// WARNING: HEventQueue.dispatchEvent() is taking  1158 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 56 MB. Current time: 12/31/21, 2:06:36 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  59075 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 60360 ms. Increasing delay to 181080 ms.
+// WARNING: HSwingWorker (Refresh Filesets Swing Worker) is taking 85 ms. Decreasing delay to 2085 ms.
+// Elapsed time: 9421 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v)]", 4); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v)]", 5); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), ad : aludec (aludec.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), ad : aludec (aludec.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), ad : aludec (aludec.v)]", 7, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), ad : aludec (aludec.v)]", 7, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regE : floprc (floprc.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regE : floprc (floprc.v)]", 8, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regM : flopr (flopr.v)]", 9, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regM : flopr (flopr.v)]", 9, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regW : flopr (flopr.v)]", 10, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), c : controller (controller.v), regW : flopr (flopr.v)]", 10, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v)]", 11); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), h : hazard (hazard.v)]", 12, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), pcbrmux : mux2 (mux2.v)]", 13, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), pcbrmux : mux2 (mux2.v)]", 13, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), pcmux : mux2 (mux2.v)]", 14, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), pcmux : mux2 (mux2.v)]", 14, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), alu : alu (alu.v)]", 35, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), alu : alu (alu.v)]", 35, false, false, false, false, false, true); // D - Double Click
+// Elapsed time: 20 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v)]", 11, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v)]", 11, true, false, false, false, false, true); // D - Double Click - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v)]", 11); // D
+// Elapsed time: 27 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), r1W : flopr (flopr.v)]", 40, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), mips : mips (mips.v), dp : datapath (datapath.v), r1W : flopr (flopr.v)]", 40, false, false, false, false, false, true); // D - Double Click
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), instdec : instdec (instdec.v)]", 44, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v), instdec : instdec (instdec.v)]", 44, false, false, false, false, false, true); // D - Double Click
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mips (mips.v)]", 47); // D
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mips (mips.v), dp : datapath (datapath.v)]", 49); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mips (mips.v), dp : datapath (datapath.v), pcreg : pc (pc.v)]", 54, false); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), mips (mips.v), dp : datapath (datapath.v), pcreg : pc (pc.v)]", 54, false, false, false, false, false, true); // D - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+closeView(PAResourceOtoP.PAViews_PROJECT_SUMMARY, "Project Summary"); // v
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTab((HResource) null, "PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux2.v", 1, false, true); // m - Double Click
+maximizeView(PAResourceOtoP.PAViews_BASE_WORKSPACE, "BaseWorkspace"); // N
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "mux2.v", 1); // m
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+floatFrame(PAResourceOtoP.PAViews_CODE, "flopr.v"); // aA
+// PAResourceOtoP.PAViews_CODE: Code: float view
+// PAResourceOtoP.PAViews_CODE: Code: close view
+closeFrame(PAResourceOtoP.PAViews_CODE, "flopr.v"); // aA
+dockFrame(PAResourceOtoP.PAViews_CODE, "flopr.v"); // aA
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D
+unMinimizeFrame(PAResourceOtoP.PAViews_SOURCES, "Sources"); // aA
+// HMemoryUtils.trashcanNow. Engine heap size: 1,055 MB. GUI used memory: 61 MB. Current time: 12/31/21, 2:36:38 PM CST
+// WARNING: HEventQueue.dispatchEvent() is taking  1280 ms.

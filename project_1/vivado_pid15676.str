@@ -1,0 +1,135 @@
+/*
+
+Xilinx Vivado v2021.2 (64-bit) [Major: 2021, Minor: 2]
+SW Build: 3367213 on Tue Oct 19 02:48:09 MDT 2021
+IP Build: 3369179 on Thu Oct 21 08:25:16 MDT 2021
+
+Process ID (PID): 15676
+License: Customer
+Mode: GUI Mode
+
+Current time: 	Fri Dec 31 11:25:16 CST 2021
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 8
+
+Screen size: 1920x1080
+Screen resolution (DPI): 125
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+Scale size: 19
+
+Java version: 	11.0.11 64-bit
+Java home: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9
+Java executable: 	C:/Xilinx/Vivado/2021.2/tps/win64/jre11.0.11_9/bin/java.exe
+Java arguments: 	[-Dsun.java2d.pmoffscreen=false, -Dhttps.protocols=TLSv1,TLSv1.1,TLSv1.2, -Dsun.java2d.xrender=false, -Dsun.java2d.d3d=false, -Dsun.awt.nopixfmt=true, -Dsun.java2d.dpiaware=true, -Dsun.java2d.uiScale.enabled=false, -Xverify:none, -Dswing.aatext=true, -XX:-UsePerfData, -Djdk.map.althashing.threshold=512, -XX:StringTableSize=4072, --add-opens=java.base/java.nio=ALL-UNNAMED, --add-opens=java.desktop/sun.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.tree=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.basic=ALL-UNNAMED, --add-opens=java.desktop/javax.swing.plaf.synth=ALL-UNNAMED, --add-opens=java.desktop/com.sun.awt=ALL-UNNAMED, -XX:NewSize=60m, -XX:MaxNewSize=60m, -Xms256m, -Xmx3072m, -Xss5m]
+Java initial memory (-Xms): 	256 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	song
+User home directory: C:/Users/31930
+User working directory: C:/Users/31930/Desktop/lab4/project_1
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: C:/Xilinx/Vivado
+HDI_APPROOT: C:/Xilinx/Vivado/2021.2
+RDI_DATADIR: C:/Xilinx/Vivado/2021.2/data
+RDI_BINDIR: C:/Xilinx/Vivado/2021.2/bin
+
+Vivado preferences file: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/vivado.xml
+Vivado preferences directory: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/
+Vivado layouts directory: C:/Users/31930/AppData/Roaming/Xilinx/Vivado/2021.2/data/layouts
+PlanAhead jar file: 	C:/Xilinx/Vivado/2021.2/lib/classes/planAhead.jar
+Vivado log file: 	C:/Users/31930/Desktop/lab4/project_1/vivado.log
+Vivado journal file: 	C:/Users/31930/Desktop/lab4/project_1/vivado.jou
+Engine tmp dir: 	C:/Users/31930/Desktop/lab4/project_1/.Xil/Vivado-15676-DESKTOP-UOKA3RC
+
+Xilinx Environment Variables
+----------------------------
+XILINX: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_DSP: C:/Xilinx/Vivado/2021.2/ids_lite/ISE
+XILINX_HLS: C:/Xilinx/Vitis_HLS/2021.2
+XILINX_PLANAHEAD: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO: C:/Xilinx/Vivado/2021.2
+XILINX_VIVADO_HLS: C:/Xilinx/Vivado/2021.2
+
+
+GUI allocated memory:	256 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 1,262 MB
+
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// Opening Vivado Project: C:\Users\31930\Desktop\lab4\project_1\project_1.xpr. Version: Vivado v2021.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FLOW_ADDED
+// Tcl Message: open_project C:/Users/31930/Desktop/lab4/project_1/project_1.xpr 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 57 MB. Current time: 12/31/21, 11:25:17 AM CST
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project C:/Users/31930/Desktop/lab4/project_1/project_1.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'. 
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 65 MB (+65839kb) [00:00:28]
+// [Engine Memory]: 1,262 MB (+1171479kb) [00:00:28]
+// [GUI Memory]: 112 MB (+45776kb) [00:00:30]
+// WARNING: HEventQueue.dispatchEvent() is taking  5620 ms.
+// Tcl Message: open_project: Time (s): cpu = 00:00:37 ; elapsed = 00:00:17 . Memory (MB): peak = 1252.348 ; gain = 0.000 
+// Project name: project_1; location: C:/Users/31930/Desktop/lab4/project_1; part: xc7a100tcsg324-1
+dismissDialog("Open Project"); // bA
+// Tcl Message: update_compile_order -fileset sources_1 
+// PAPropertyPanels.initPanels (top.v) elapsed time: 0.2s
+// Elapsed time: 64 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2, true); // D - Node
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v)]", 2); // D
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v)]", 3, true); // D - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top (top.v), cpu : mycpu_top (mycpu_top.v)]", 3, true, false, false, false, false, true); // D - Double Click - Node
+// [GUI Memory]: 125 MB (+7501kb) [00:01:47]
+selectButton(RDIResource.ProgressDialog_BACKGROUND, "Background"); // a
+selectTab((HResource) null, (HResource) null, "Log", 2); // aL
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 72, 85); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 181, 103); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 5, 88); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 547, 140); // T
+selectCodeEditor(PAResourceItoN.LogMonitor_MONITOR, 128, 56); // T
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 65 MB. Current time: 12/31/21, 11:27:15 AM CST
+typeControlKey(PAResourceItoN.LogMonitor_MONITOR, "Monitor", 'c'); // T
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 65 MB. Current time: 12/31/21, 11:27:45 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 65 MB. Current time: 12/31/21, 11:28:15 AM CST
+// HMemoryUtils.trashcanNow. Engine heap size: 1,262 MB. GUI used memory: 66 MB. Current time: 12/31/21, 11:29:45 AM CST

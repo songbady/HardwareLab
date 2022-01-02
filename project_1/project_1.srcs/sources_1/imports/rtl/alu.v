@@ -19,10 +19,10 @@
 // 
 //////////////////////////////////////////////////////////////////////////////////
 
-
+`include "defines1.vh"
 module alu(
 	input wire[31:0] a,b,
-	input wire[2:0] op,
+	input wire[7:0] op,
 	output reg[31:0] y,
 	output reg overflow,
 	output wire zero
@@ -32,11 +32,16 @@ module alu(
 	assign bout = op[2] ? ~b : b;
 	assign s = a + bout + op[2];
 	always @(*) begin
-		case (op[1:0])
-			2'b00: y <= a & bout;
-			2'b01: y <= a | bout;
-			2'b10: y <= s;
-			2'b11: y <= s[31];
+		case (op)
+			//logic inst
+			`EXE_AND_OP: 	y <= a & b; 
+			`EXE_OR_OP: 	y <= a | b;
+			`EXE_XOR_OP: 	y <= a ^ b;
+			`EXE_NOR_OP: 	y <= ~(a | b);
+			`EXE_LUI_OP: 	y <= {b[15:0], {16{1'b0}}};
+			`EXE_ANDI_OP: 	y <= a & {{16{1'b0}}, b[15:0]};	//零扩展
+			`EXE_ORI_OP: 	y <= a | {{16{1'b0}}, b[15:0]};
+			`EXE_XORI_OP: 	y <= a ^ {{16{1'b0}}, b[15:0]};
 			default : y <= 32'b0;
 		endcase	
 	end
